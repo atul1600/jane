@@ -1,0 +1,49 @@
+react 
+A] installing component
+	1]hello program
+
+		import React from 'react';
+		import ReactDOM from 'react-dom'
+
+		class Hello extends React.Component{
+			render(){
+				return(
+			   		<h1> hello  </h1>
+						)
+			}
+		}
+		ReactDOM.render(< Hello/> ,document.getElementById('root'))
+////////////////////////////////////////////////////////////////////
+component name always start with capital alphabet.
+	2]multiple component
+
+		import React from 'react';
+		import ReactDOM from 'react-dom'
+
+		class Hello extends React.Component{
+			render(){
+				return(
+			  	 <h1> hello  </h1>
+					)
+				}
+			}
+		class Atul extends React.Component{
+			render(){
+				return(
+			   		<h1>  atul </h1>
+					)
+				}
+			}
+		class Jane extends React.Component{
+			render(){
+				return( 
+			   		<section>
+			   			<div>
+			   					<Hello/> < Atul/ > 
+			  			 </div>
+			   		</section>
+					)
+				}
+			}
+ReactDOM.render(< Jane/> ,document.getElementById('root'))
+
